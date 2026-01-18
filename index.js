@@ -3,12 +3,6 @@ const http = require('http');
 const fs = require('fs');
 const port = 3000;
 
-const routes = {
-    '/': `index.html`,
-    '/about': `about.html`,
-    '/contact-me': `contact-me.html`,
-};
-
 const server = http.createServer((request, response) => {
     switch (request.url) {
         case '/':
